@@ -7,3 +7,13 @@ CREATE TABLE IF NOT EXISTS employees
   phone VARCHAR(128) NOT NULL,
   PRIMARY KEY (id)
 );
+
+INSERT INTO employees (name, position, phone) VALUES (?, ?, ?)
+
+SELECT * FROM employees
+
+SELECT * FROM employees WHERE id = ?
+
+UPDATE employees SET name = ?, position = ?, phone = ? WHERE id = ?
+
+DELETE FROM employees where id = ?
